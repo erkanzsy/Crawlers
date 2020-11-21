@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  pysel:
+    container_name: pysel
+    build: .
+    tty: true
+    volumes:
+        - ./app:/app
