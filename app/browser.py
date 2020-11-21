@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-
+import time
 
 def getChrome():
     chromedriver_path = '/usr/lib/chromium/chromedriver'
@@ -20,3 +20,11 @@ def getChrome():
 
 def quit(driver):
     driver.quit()
+
+
+def sleep(sec):
+    time.sleep(sec)
+
+
+def ss(driver):
+    driver.save_screenshot('./test.png')
